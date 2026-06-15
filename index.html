@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TABAC DE LA CÔTE</title>
+  <meta name="description" content="Tabac, presse, FDJ, Point Poste, recharge téléphone et photocopies." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <span class="nav-title">Tabac du Centre</span>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#colis">Colis</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu">&#9776;</button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#colis" onclick="closeMenu()">Colis</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- ========== BARRE HORAIRES ========== -->
+  <div class="hours-bar">
+    <span class="hours-text" id="hoursText">Lun–Sam 7h30–19h30 &nbsp;·&nbsp; Dim 8h–13h</span>
+    <span class="hours-status" id="hoursStatus"></span>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <p class="hero-eyebrow">Votre tabac de quartier</p>
+    <h1 class="hero-title">Presse, tabac, colis<br>et bien plus encore</h1>
+    <p class="hero-sub">Point relais, FDJ, recharge téléphone, photocopies — tout ce dont vous avez besoin, à deux pas de chez vous.</p>
+    <div class="hero-badges">
+      <span class="badge">📦 Point Poste</span>
+      <span class="badge">🎟️ FDJ</span>
+      <span class="badge">📱 Recharge</span>
+      <span class="badge">🖨️ Photocopies</span>
+    </div>
+  </header>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section" id="services">
+    <p class="section-title">Nos services</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <span class="service-icon">🚬</span>
+        <div class="s-name">Tabac</div>
+        <div class="s-desc">Toutes marques, accessoires, papier à rouler</div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">📰</span>
+        <div class="s-name">Presse</div>
+        <div class="s-desc">Journaux et magazines du jour</div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">🎟️</span>
+        <div class="s-name">FDJ</div>
+        <div class="s-desc">Tickets à gratter, Loto, EuroMillions</div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">📦</span>
+        <div class="s-name">Point Poste</div>
+        <div class="s-desc">Dépôt et retrait de colis</div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">📱</span>
+        <div class="s-name">Recharge</div>
+        <div class="s-desc">Tous opérateurs, carte prépayée</div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">🖨️</span>
+        <div class="s-name">Photocopies</div>
+        <div class="s-desc">Noir & blanc et couleur, A4 et A3</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== COLIS ========== -->
+  <section class="section section--alt" id="colis">
+    <p class="section-title">Mon colis est-il arrivé ?</p>
+    <div class="colis-box">
+      <div class="colis-body">
+        <p class="colis-title">Vérifier la disponibilité de votre colis</p>
+        <p class="colis-text">
+          Laissez votre nom ci-dessous et nous vous rappelons dans la journée.
+          Vous pouvez aussi appeler directement au
+          <a href="tel:+33123456789" class="phone-link">03 23 83 10 37</a>.
+        </p>
+        <form class="colis-form" id="colisForm">
+          <input type="text" id="colisNom" placeholder="Votre nom de famille" required autocomplete="family-name" />
+          <input type="tel" id="colisTel" placeholder="Votre téléphone (facultatif)" autocomplete="tel" />
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="colis-confirm" id="colisConfirm" hidden>
+          ✅ Demande envoyée ! Nous vous contacterons dans la journée.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / CARTE ========== -->
+  <section class="section" id="contact">
+    <p class="section-title">Nous trouver</p>
+
+    <!-- Remplacez les coordonnées ci-dessous par les vraies -->
+    <div class="map-wrapper">
+      <iframe
+        title="Localisation du tabac"
+        src="https://www.google.com/maps?q=12+rue+de+la+République,+75001+Paris&output=embed"
+        width="100%"
+        height="220"
+        style="border:0; border-radius: 8px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="infos-grid">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <div>
+          <div class="info-label">Adresse</div>
+          <!-- À MODIFIER -->
+          <div class="info-value">90 Av. de Soissons,<br>02400 Château-Thierry</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <div>
+          <div class="info-label">Téléphone</div>
+          <!-- À MODIFIER -->
+          <div class="info-value"><a href="tel:+33123456789">03 23 83 10 37</a></div>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🕐</span>
+        <div>
+          <div class="info-label">Lundi – Vendredi</div>
+          <!-- À MODIFIER -->
+          <div class="info-value">6h30 – 19h00</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">☀️</span>
+        <div>
+          <div class="info-label">Samedi</div>
+          <!-- À MODIFIER -->
+          <div class="info-value">6h30 – 12h15</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <span class="footer-copy">© 2025 Tabac du Centre</span>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
