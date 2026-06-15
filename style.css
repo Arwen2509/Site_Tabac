@@ -570,6 +570,43 @@ a {
   font-weight: 500;
 }
 
+.colis-help {
+  margin-top: 24px;
+}
+
+.colis-help-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.colis-cases {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.colis-case {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.colis-case-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.colis-case-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 .map-wrapper {
   margin-bottom: 20px;
   border-radius: var(--radius);
@@ -677,5 +714,9 @@ a {
 
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .colis-cases {
+    grid-template-columns: 1fr;
   }
 }
