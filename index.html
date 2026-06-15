@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TABAC DE LA CÔTE</title>
-  <meta name="description" content="Tabac, presse, FDJ, Point Poste, recharge téléphone et photocopies." />
+  <title>Tabac du Centre</title>
+  <meta
+    name="description"
+    content="Tabac, presse, FDJ, point poste, recharge telephone et photocopies."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- ========== NAVIGATION ========== -->
   <nav class="nav">
     <div class="nav-brand">
       <span class="nav-title">Tabac du Centre</span>
@@ -21,103 +22,157 @@
     </div>
     <button class="nav-burger" id="burger" aria-label="Menu">&#9776;</button>
   </nav>
+
   <div class="nav-mobile" id="navMobile">
     <a href="#services" onclick="closeMenu()">Services</a>
     <a href="#colis" onclick="closeMenu()">Colis</a>
     <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
 
-  <!-- ========== BARRE HORAIRES ========== -->
   <div class="hours-bar">
-    <span class="hours-text" id="hoursText">Ven 6h30–19h00 &nbsp;·&nbsp; Sam 6h30–12h15</span>
+    <span class="hours-text">Lun - Ven 6h30 - 19h00 &middot; Sam 6h30 - 12h15</span>
     <span class="hours-status" id="hoursStatus"></span>
   </div>
 
-  <!-- ========== HERO ========== -->
   <header class="hero">
-    <p class="hero-eyebrow">Votre tabac de quartier</p>
-    <h1 class="hero-title">Presse, tabac, colis<br>et bien plus encore</h1>
-    <p class="hero-sub">Point relais, FDJ, recharge téléphone, photocopies — tout ce dont vous avez besoin, à deux pas de chez vous.</p>
+    <p class="hero-eyebrow">Votre commerce de proximite</p>
+    <h1 class="hero-title">Tabac, presse, colis et services utiles au quotidien</h1>
+    <p class="hero-sub">
+      Un point pratique pour retirer un colis, jouer a la FDJ, acheter votre presse
+      ou faire des photocopies rapidement.
+    </p>
+
     <div class="hero-badges">
-      <span class="badge">📦 Point Poste</span>
-      <span class="badge">🎟️ FDJ</span>
-      <span class="badge">📱 Recharge</span>
-      <span class="badge">🖨️ Photocopies</span>
+      <span class="badge">Point Poste</span>
+      <span class="badge">FDJ</span>
+      <span class="badge">Recharge</span>
+      <span class="badge">Photocopies</span>
+    </div>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="tel:+33323831037">Appeler</a>
+      <a
+        class="button"
+        href="https://www.google.com/maps?q=90+Av.+de+Soissons,+02400+Chateau-Thierry"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Itineraire
+      </a>
+      <a class="button" href="#contact">Horaires</a>
     </div>
   </header>
 
-  <!-- ========== SERVICES ========== -->
+  <section class="section quick-info">
+    <div class="quick-card">
+      <div class="quick-label">Adresse</div>
+      <div class="quick-value">90 Av. de Soissons<br />02400 Chateau-Thierry</div>
+    </div>
+    <div class="quick-card">
+      <div class="quick-label">Telephone</div>
+      <div class="quick-value"><a href="tel:+33323831037">03 23 83 10 37</a></div>
+    </div>
+    <div class="quick-card">
+      <div class="quick-label">Horaires</div>
+      <div class="quick-value">Lun - Ven 6h30 - 19h00<br />Sam 6h30 - 12h15</div>
+    </div>
+  </section>
+
   <section class="section" id="services">
     <p class="section-title">Nos services</p>
     <div class="services-grid">
-
       <div class="service-card">
-        <span class="service-icon">🚬</span>
+        <div class="service-icon">Tabac</div>
         <div class="s-name">Tabac</div>
-        <div class="s-desc">Toutes marques, accessoires, papier à rouler</div>
+        <div class="s-desc">Toutes marques, accessoires et papier a rouler.</div>
       </div>
 
       <div class="service-card">
-        <span class="service-icon">📰</span>
+        <div class="service-icon">Presse</div>
         <div class="s-name">Presse</div>
-        <div class="s-desc">Journaux et magazines du jour</div>
+        <div class="s-desc">Journaux et magazines du jour.</div>
       </div>
 
       <div class="service-card">
-        <span class="service-icon">🎟️</span>
+        <div class="service-icon">FDJ</div>
         <div class="s-name">FDJ</div>
-        <div class="s-desc">Tickets à gratter, Loto, EuroMillions</div>
+        <div class="s-desc">Loto, EuroMillions et jeux a gratter.</div>
       </div>
 
       <div class="service-card">
-        <span class="service-icon">📦</span>
+        <div class="service-icon">Colis</div>
         <div class="s-name">Point Poste</div>
-        <div class="s-desc">Dépôt et retrait de colis</div>
+        <div class="s-desc">Depot et retrait de colis simplement.</div>
       </div>
 
       <div class="service-card">
-        <span class="service-icon">📱</span>
+        <div class="service-icon">Mobile</div>
         <div class="s-name">Recharge</div>
-        <div class="s-desc">Tous opérateurs, carte prépayée</div>
+        <div class="s-desc">Recharges et cartes prepayees.</div>
       </div>
 
       <div class="service-card">
-        <span class="service-icon">🖨️</span>
+        <div class="service-icon">Copies</div>
         <div class="s-name">Photocopies</div>
-        <div class="s-desc">Noir & blanc et couleur, A4 et A3</div>
+        <div class="s-desc">Noir et blanc, couleur, A4 et A3.</div>
       </div>
-
     </div>
   </section>
 
-  <!-- ========== COLIS ========== -->
-  <section class="section section--alt" id="colis">
-    <p class="section-title">Mon colis est-il arrivé ?</p>
+  <section class="section section-alt">
+    <p class="section-title">Pourquoi venir chez nous</p>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-title">Simple</div>
+        <p class="highlight-text">Les services les plus utiles reunis au meme endroit.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-title">Rapide</div>
+        <p class="highlight-text">Passez pour un colis, un journal ou une recharge sans perdre de temps.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-title">Pratique</div>
+        <p class="highlight-text">Telephone, adresse, horaires et itineraire visibles tout de suite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="colis">
+    <p class="section-title">Colis</p>
     <div class="colis-box">
-      <div class="colis-body">
-        <p class="colis-title">Vérifier la disponibilité de votre colis</p>
-        <p class="colis-text">
-          Laissez votre nom ci-dessous et nous vous rappelons dans la journée.
-          Vous pouvez aussi appeler directement au
-          <a href="tel:+33123456789" class="phone-link">03 23 83 10 37</a>.
-        </p>
-        <form class="colis-form" id="colisForm">
-          <input type="text" id="colisNom" placeholder="Votre nom de famille" required autocomplete="family-name" />
-          <input type="tel" id="colisTel" placeholder="Votre téléphone (facultatif)" autocomplete="tel" />
-          <button type="submit">Envoyer</button>
-        </form>
-        <p class="colis-confirm" id="colisConfirm" hidden>
-          ✅ Demande envoyée ! Nous vous contacterons dans la journée.
-        </p>
-      </div>
+      <p class="colis-title">Verifier la disponibilite de votre colis</p>
+      <p class="colis-text">
+        Laissez votre nom ci-dessous et nous vous rappelons dans la journee.
+        Vous pouvez aussi appeler directement au
+        <a href="tel:+33323831037" class="phone-link">03 23 83 10 37</a>.
+      </p>
+
+      <form class="colis-form" id="colisForm">
+        <input
+          type="text"
+          id="colisNom"
+          placeholder="Votre nom de famille"
+          required
+          autocomplete="family-name"
+        />
+        <input
+          type="tel"
+          id="colisTel"
+          placeholder="Votre telephone (facultatif)"
+          autocomplete="tel"
+        />
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p class="colis-confirm" id="colisConfirm" hidden>
+        Demande envoyee. Nous vous contacterons dans la journee.
+      </p>
     </div>
   </section>
 
-  <!-- ========== CONTACT / CARTE ========== -->
   <section class="section" id="contact">
     <p class="section-title">Nous trouver</p>
 
-    <!-- Remplacez les coordonnées ci-dessous par les vraies -->
     <div class="map-wrapper">
       <iframe
         title="Localisation du tabac"
@@ -127,50 +182,59 @@
         style="border:0; border-radius: 8px;"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-
 
     <div class="infos-grid">
       <div class="info-item">
-        <span class="info-icon">📍</span>
+        <div class="info-icon">Adresse</div>
         <div>
           <div class="info-label">Adresse</div>
-          <!-- À MODIFIER -->
-          <div class="info-value">90 Av. de Soissons,<br>02400 Château-Thierry</div>
+          <div class="info-value">90 Av. de Soissons,<br />02400 Chateau-Thierry</div>
         </div>
       </div>
+
       <div class="info-item">
-        <span class="info-icon">📞</span>
+        <div class="info-icon">Tel</div>
         <div>
-          <div class="info-label">Téléphone</div>
-          <!-- À MODIFIER -->
-          <div class="info-value"><a href="tel:+33123456789">03 23 83 10 37</a></div>
+          <div class="info-label">Telephone</div>
+          <div class="info-value"><a href="tel:+33323831037">03 23 83 10 37</a></div>
         </div>
       </div>
+
       <div class="info-item">
-        <span class="info-icon">🕐</span>
+        <div class="info-icon">L-V</div>
         <div>
-          <div class="info-label">Lundi – Vendredi</div>
-          <!-- À MODIFIER -->
-          <div class="info-value">6h30 – 19h00</div>
+          <div class="info-label">Lundi - Vendredi</div>
+          <div class="info-value">6h30 - 19h00</div>
         </div>
       </div>
+
       <div class="info-item">
-        <span class="info-icon">☀️</span>
+        <div class="info-icon">Sam</div>
         <div>
           <div class="info-label">Samedi</div>
-          <!-- À MODIFIER -->
-          <div class="info-value">6h30 – 12h15</div>
+          <div class="info-value">6h30 - 12h15</div>
         </div>
       </div>
     </div>
+
+    <div class="contact-actions">
+      <a class="button button-primary" href="tel:+33323831037">Appeler le magasin</a>
+      <a
+        class="button"
+        href="https://www.google.com/maps?q=90+Av.+de+Soissons,+02400+Chateau-Thierry"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ouvrir dans Google Maps
+      </a>
+    </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <span class="footer-copy">© 2025 Tabac du Centre</span>
+    <span class="footer-copy">&copy; 2025 Tabac du Centre</span>
     <div class="footer-links">
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
